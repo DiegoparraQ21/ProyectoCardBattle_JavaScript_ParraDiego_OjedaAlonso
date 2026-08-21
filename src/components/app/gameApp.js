@@ -8,6 +8,7 @@ export class GameApp extends HTMLElement {
     this.player = getCurrentPlayer();
     this.admin = null;
     this.battleData = null;
+    this.homeAudio = null;
   }
 
   connectedCallback() {
@@ -55,6 +56,8 @@ export class GameApp extends HTMLElement {
       this.player = null;
       this.navigate('home');
     });
+
+    this.bindHomeAudio();
   }
 
   renderView() {
@@ -105,6 +108,11 @@ export class GameApp extends HTMLElement {
           </div>
         </div>
 
+        <audio id="home-audio" loop preload="none" src="/sounds/pain-theme.mp3"></audio>
+        <button class="home-audio-toggle" type="button" data-home-audio aria-label="Activar música de inicio">
+          <span aria-hidden="true">♪</span> Activar música
+        </button>
+
         <div class="home-info">
           <article><span>01</span><h3>Elige</h3><p>Selecciona exactamente 5 cartas activas y crea tu orden de combate.</p></article>
           <article><span>02</span><h3>Combate</h3><p>Alterna ataques, defensa y poderes especiales con cooldown.</p></article>
@@ -112,6 +120,30 @@ export class GameApp extends HTMLElement {
         </div>
       </section>
     `;
+  }
+
+  bindHomeAudio() {
+    const audio = this.querySelector('#home-audio');
+    const toggle = this.querySelector('[data-home-audio]');
+    if (!audio || !toggle) return;
+
+    this.homeAudio = audio;
+    toggle.addEventListener('click', async () => {
+      if (audio.paused) {
+        try {
+          await audio.play();
+          toggle.innerHTML = '<span aria-hidden="true">Ⅱ</span> Silenciar música';
+          toggle.setAttribute('aria-label', 'Silenciar música de inicio');
+        } catch {
+          toggle.textContent = 'No se pudo reproducir';
+        }
+        return;
+      }
+
+      audio.pause();
+      toggle.innerHTML = '<span aria-hidden="true">♪</span> Activar música';
+      toggle.setAttribute('aria-label', 'Activar música de inicio');
+    });
   }
 
   bindGlobalEvents() {
