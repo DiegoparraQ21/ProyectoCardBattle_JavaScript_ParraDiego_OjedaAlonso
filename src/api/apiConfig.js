@@ -1,10 +1,10 @@
-const mode = import.meta.env.VITE_API_MODE || 'development';
+const mode = import.meta.env.PROD ? 'production' : (import.meta.env.VITE_API_MODE || 'development');
 
 let API_URL;
 
 switch (mode) {
   case 'production':
-    API_URL = import.meta.env.VITE_API_PROD_URL;
+    API_URL = import.meta.env.VITE_API_PROD_URL?.replace(/\/$/, '');
     break;
   case 'development':
   default:
