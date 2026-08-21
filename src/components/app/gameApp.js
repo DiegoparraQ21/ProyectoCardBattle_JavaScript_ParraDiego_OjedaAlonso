@@ -108,7 +108,7 @@ export class GameApp extends HTMLElement {
           </div>
         </div>
 
-        <audio id="home-audio" loop preload="none" src="/sounds/pain-theme.mp3"></audio>
+        <audio id="home-audio" autoplay loop preload="auto" src="/sounds/pain-theme.mp3"></audio>
         <button class="home-audio-toggle" type="button" data-home-audio aria-label="Activar música de inicio">
           <span aria-hidden="true">♪</span> Activar música
         </button>
@@ -128,21 +128,42 @@ export class GameApp extends HTMLElement {
     if (!audio || !toggle) return;
 
     this.homeAudio = audio;
+    const setPlayingState = () => {
+      toggle.innerHTML = '<span aria-hidden="true">Ⅱ</span> Silenciar música';
+      toggle.setAttribute('aria-label', 'Silenciar música de inicio');
+    };
+
+    const setPausedState = () => {
+      toggle.innerHTML = '<span aria-hidden="true">♪</span> Activar música';
+      toggle.setAttribute('aria-label', 'Activar música de inicio');
+    };
+
+    const startAudio = async () => {
+      try {
+        await audio.play();
+        setPlayingState();
+        return true;
+      } catch {
+        setPausedState();
+        return false;
+      }
+    };
+
+    startAudio().then((started) => {
+      if (started) return;
+      const resumeAudio = () => startAudio();
+      document.addEventListener('pointerdown', resumeAudio, { once: true });
+      document.addEventListener('keydown', resumeAudio, { once: true });
+    });
+
     toggle.addEventListener('click', async () => {
       if (audio.paused) {
-        try {
-          await audio.play();
-          toggle.innerHTML = '<span aria-hidden="true">Ⅱ</span> Silenciar música';
-          toggle.setAttribute('aria-label', 'Silenciar música de inicio');
-        } catch {
-          toggle.textContent = 'No se pudo reproducir';
-        }
+        await startAudio();
         return;
       }
 
       audio.pause();
-      toggle.innerHTML = '<span aria-hidden="true">♪</span> Activar música';
-      toggle.setAttribute('aria-label', 'Activar música de inicio');
+      setPausedState();
     });
   }
 
