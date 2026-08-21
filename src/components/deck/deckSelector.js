@@ -19,12 +19,12 @@ export class DeckSelector extends HTMLElement {
       this.hydrateCards();
       this.bind();
     } catch (error) {
-      this.innerHTML = `<div class="empty-state error-box">No se pudieron cargar las cartas: ${error.message}</div>`;
+      this.innerHTML = /*html*/`<div class="empty-state error-box">No se pudieron cargar las cartas: ${error.message}</div>`;
     }
   }
 
   renderLoading() {
-    this.innerHTML = `<div class="loading-screen"><div class="spinner"></div><p>Invocando cartas activas...</p></div>`;
+    this.innerHTML = /*html*/`<div class="loading-screen"><div class="spinner"></div><p>Invocando cartas activas...</p></div>`;
   }
 
   render() {
@@ -101,7 +101,7 @@ export class DeckSelector extends HTMLElement {
       return '<div class="selected-empty">Tus cartas aparecerán aquí en el orden de entrada.</div>';
     }
 
-    return this.selected.map((card, index) => `
+    return this.selected.map((card, index) => /*html*/`
       <div class="selected-item">
         <span class="order-number">${index + 1}</span>
         <img src="${card.imagen}" alt="${card.nombre}" onerror="this.src='./images/cartas/placeholder.svg'">

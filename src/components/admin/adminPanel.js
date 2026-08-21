@@ -21,7 +21,7 @@ export class AdminPanel extends HTMLElement {
   }
 
   renderLoading() {
-    this.innerHTML = `<div class="loading-screen"><div class="spinner"></div><p>Cargando panel administrativo...</p></div>`;
+    this.innerHTML = /*html*/`<div class="loading-screen"><div class="spinner"></div><p>Cargando panel administrativo...</p></div>`;
   }
 
   async loadCards() {
@@ -30,12 +30,12 @@ export class AdminPanel extends HTMLElement {
       this.render();
       this.bind();
     } catch (error) {
-      this.innerHTML = `<div class="empty-state error-box">Error cargando cartas: ${error.message}</div>`;
+      this.innerHTML = /*html*/`<div class="empty-state error-box">Error cargando cartas: ${error.message}</div>`;
     }
   }
 
   render() {
-    this.innerHTML = `
+    this.innerHTML = /*html*/`
       <section class="admin-screen">
         <div class="section-head">
           <div>
@@ -50,7 +50,7 @@ export class AdminPanel extends HTMLElement {
           <table class="crud-table">
             <thead><tr><th>Carta</th><th>Clan</th><th>HP</th><th>Especial</th><th>Estado</th><th>Acciones</th></tr></thead>
             <tbody>
-              ${this.cards.map((card) => `
+              ${this.cards.map((card) => /*html*/`
                 <tr>
                   <td><div class="table-card-name"><img src="${card.imagen}" onerror="this.src='./images/cartas/placeholder.svg'" alt="">${card.nombre}</div></td>
                   <td>${card.clan || card.tipo}</td>

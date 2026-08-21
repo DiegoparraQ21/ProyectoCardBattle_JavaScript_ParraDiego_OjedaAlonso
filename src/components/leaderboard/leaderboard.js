@@ -7,12 +7,12 @@ export class Leaderboard extends HTMLElement {
       this.players = await getPlayers();
       this.render();
     } catch (error) {
-      this.innerHTML = `<div class="empty-state error-box">No se pudo cargar el ranking: ${error.message}</div>`;
+      this.innerHTML = /*html*/`<div class="empty-state error-box">No se pudo cargar el ranking: ${error.message}</div>`;
     }
   }
 
   renderLoading() {
-    this.innerHTML = `<div class="loading-screen"><div class="spinner"></div><p>Consultando clasificación...</p></div>`;
+    this.innerHTML = /*html*/`<div class="loading-screen"><div class="spinner"></div><p>Consultando clasificación...</p></div>`;
   }
 
   render() {
@@ -39,7 +39,7 @@ export class Leaderboard extends HTMLElement {
           <table class="ranking-table">
             <thead><tr><th>#</th><th>Jugador</th><th>Puntos</th><th>Victorias</th><th>Partidas</th></tr></thead>
             <tbody>
-              ${rest.length ? rest.map((player, index) => `
+              ${rest.length ? rest.map((player, index) => /*html*/`
                 <tr>
                   <td>${index + 4}</td>
                   <td><strong>${player.apodo}</strong></td>

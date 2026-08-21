@@ -38,7 +38,7 @@ export class BattleView extends HTMLElement {
 
   renderEmpty() {
     if (!this.state) {
-      this.innerHTML = `
+      this.innerHTML = /*html*/`
         <section class="empty-state battle-empty">
           <div class="section-kicker">ARENA</div>
           <h2>La batalla aparecerá aquí</h2>
