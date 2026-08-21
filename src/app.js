@@ -1,0 +1,9 @@
+import './components/cards/cardTile.js';
+import './components/app/gameApp.js';
+import './components/auth/playerRegister.js';
+import './components/auth/adminLogin.js';
+import './components/deck/deckSelector.js';
+import './components/battle/battleView.js';
+import './components/leaderboard/leaderboard.js';
+import './components/admin/adminPanel.js';
+import './styles.css';

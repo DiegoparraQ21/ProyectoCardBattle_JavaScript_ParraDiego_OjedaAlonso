@@ -1,0 +1,1146 @@
+{
+  "administradores": [
+    {
+      "id": "admin-001",
+      "usuario": "administrador",
+      "contrasena": "tarjetas2026",
+      "nombre": "Administrador académico"
+    }
+  ],
+  "jugadores": [
+    {
+      "id": "jugador-170d0d4e",
+      "apodo": "alonso",
+      "puntos": 50,
+      "victorias": 1,
+      "perdidas": 0,
+      "juegosJugados": 1,
+      "createdAt": "2026-08-20T02:01:36.686Z"
+    },
+    {
+      "id": "jugador-866d44fe",
+      "apodo": "diego",
+      "puntos": 50,
+      "victorias": 1,
+      "perdidas": 0,
+      "juegosJugados": 1,
+      "createdAt": "2026-08-20T21:22:35.704Z"
+    }
+  ],
+  "tarjetas": [
+    {
+      "id": "tarjeta-001",
+      "nombre": "Hashirama Senju",
+      "tipo": "Shinobi",
+      "clan": "Senju",
+      "rareza": "SR",
+      "imagen": "images/cartas/HASHIRAMA_SENJU.png",
+      "descripcion": "Primer Hokage. Domina el combate con técnicas de Senju.",
+      "hp": 250,
+      "ataques": [
+        {
+          "id": "ataque-01-1",
+          "nombre": "Kunai Relámpago",
+          "baseDamage": 20
+        },
+        {
+          "id": "ataque-01-2",
+          "nombre": "Impulso Ninja",
+          "baseDamage": 30
+        },
+        {
+          "id": "ataque-01-3",
+          "nombre": "Tormenta de Chakra",
+          "baseDamage": 40
+        },
+        {
+          "id": "ataque-01-4",
+          "nombre": "Técnica Mortal",
+          "baseDamage": 50
+        }
+      ],
+      "defensa": {
+        "nombre": "Guardia de Chakra",
+        "reduccion": 0.5
+      },
+      "especial": {
+        "nombre": "Mokuton: Bosque Profundo",
+        "baseDamage": 65,
+        "desbloquearTurn": 2,
+        "enfriamiento": 3,
+        "descripcion": "Técnica especial de Hashirama Senju."
+      },
+      "sonidos": {
+        "ataque": "sounds/attack.wav",
+        "defensa": "sounds/defense.wav",
+        "especial": "sounds/special.wav",
+        "derrotado": "sounds/defeated.wav"
+      },
+      "activo": true,
+      "createdAt": "2026-08-19T00:00:00.000Z"
+    },
+    {
+      "id": "tarjeta-002",
+      "nombre": "Tsunade Senju",
+      "tipo": "Shinobi",
+      "clan": "Senju",
+      "rareza": "SR",
+      "imagen": "images/cartas/TSUNADE_SENJU.png",
+      "descripcion": "Quinta Hokage. Domina el combate con técnicas de Senju.",
+      "hp": 250,
+      "ataques": [
+        {
+          "id": "ataque-02-1",
+          "nombre": "Palma Chakra",
+          "baseDamage": 20
+        },
+        {
+          "id": "ataque-02-2",
+          "nombre": "Combo del Shinobi",
+          "baseDamage": 30
+        },
+        {
+          "id": "ataque-02-3",
+          "nombre": "Golpe Demoledor",
+          "baseDamage": 40
+        },
+        {
+          "id": "ataque-02-4",
+          "nombre": "Impacto de Guerra",
+          "baseDamage": 50
+        }
+      ],
+      "defensa": {
+        "nombre": "Guardia de Chakra",
+        "reduccion": 0.5
+      },
+      "especial": {
+        "nombre": "Byakugō: Regeneración",
+        "baseDamage": 65,
+        "desbloquearTurn": 2,
+        "enfriamiento": 3,
+        "descripcion": "Técnica especial de Tsunade Senju."
+      },
+      "sonidos": {
+        "ataque": "sounds/attack.wav",
+        "defensa": "sounds/defense.wav",
+        "especial": "sounds/special.wav",
+        "derrotado": "sounds/defeated.wav"
+      },
+      "activo": true,
+      "createdAt": "2026-08-19T00:00:00.000Z"
+    },
+    {
+      "id": "tarjeta-003",
+      "nombre": "Tobirama Senju",
+      "tipo": "Shinobi",
+      "clan": "Senju",
+      "rareza": "SR",
+      "imagen": "images/cartas/TOBIRAMA_SENJU.png",
+      "descripcion": "Segundo Hokage. Domina el combate con técnicas de Senju.",
+      "hp": 250,
+      "ataques": [
+        {
+          "id": "ataque-03-1",
+          "nombre": "Jutsu Elemental",
+          "baseDamage": 20
+        },
+        {
+          "id": "ataque-03-2",
+          "nombre": "Ataque Giratorio",
+          "baseDamage": 30
+        },
+        {
+          "id": "ataque-03-3",
+          "nombre": "Asalto Supremo",
+          "baseDamage": 40
+        },
+        {
+          "id": "ataque-03-4",
+          "nombre": "Ráfaga Final",
+          "baseDamage": 50
+        }
+      ],
+      "defensa": {
+        "nombre": "Guardia de Chakra",
+        "reduccion": 0.5
+      },
+      "especial": {
+        "nombre": "Suiton: Dragón de Agua",
+        "baseDamage": 65,
+        "desbloquearTurn": 2,
+        "enfriamiento": 3,
+        "descripcion": "Técnica especial de Tobirama Senju."
+      },
+      "sonidos": {
+        "ataque": "sounds/attack.wav",
+        "defensa": "sounds/defense.wav",
+        "especial": "sounds/special.wav",
+        "derrotado": "sounds/defeated.wav"
+      },
+      "activo": true,
+      "createdAt": "2026-08-19T00:00:00.000Z"
+    },
+    {
+      "id": "tarjeta-004",
+      "nombre": "Madara Uchiha",
+      "tipo": "Shinobi",
+      "clan": "Uchiha",
+      "rareza": "SR",
+      "imagen": "images/cartas/MADARA_UCHIHA.png",
+      "descripcion": "Leyenda del Clan Uchiha. Domina el combate con técnicas de Uchiha.",
+      "hp": 250,
+      "ataques": [
+        {
+          "id": "ataque-04-1",
+          "nombre": "Golpe Rápido",
+          "baseDamage": 20
+        },
+        {
+          "id": "ataque-04-2",
+          "nombre": "Técnica de Clan",
+          "baseDamage": 30
+        },
+        {
+          "id": "ataque-04-3",
+          "nombre": "Jutsu Avanzado",
+          "baseDamage": 40
+        },
+        {
+          "id": "ataque-04-4",
+          "nombre": "Arte Ninja",
+          "baseDamage": 50
+        }
+      ],
+      "defensa": {
+        "nombre": "Guardia de Chakra",
+        "reduccion": 0.5
+      },
+      "especial": {
+        "nombre": "Mangekyō Sharingan: Susanoo",
+        "baseDamage": 65,
+        "desbloquearTurn": 2,
+        "enfriamiento": 3,
+        "descripcion": "Técnica especial de Madara Uchiha."
+      },
+      "sonidos": {
+        "ataque": "sounds/attack.wav",
+        "defensa": "sounds/defense.wav",
+        "especial": "sounds/special.wav",
+        "derrotado": "sounds/defeated.wav"
+      },
+      "activo": true,
+      "createdAt": "2026-08-19T00:00:00.000Z"
+    },
+    {
+      "id": "tarjeta-005",
+      "nombre": "Sasuke Uchiha",
+      "tipo": "Shinobi",
+      "clan": "Uchiha",
+      "rareza": "SR",
+      "imagen": "images/cartas/SASUKE_UCHIHA.png",
+      "descripcion": "Último Uchiha. Domina el combate con técnicas de Uchiha.",
+      "hp": 250,
+      "ataques": [
+        {
+          "id": "ataque-05-1",
+          "nombre": "Kunai Relámpago",
+          "baseDamage": 20
+        },
+        {
+          "id": "ataque-05-2",
+          "nombre": "Impulso Ninja",
+          "baseDamage": 30
+        },
+        {
+          "id": "ataque-05-3",
+          "nombre": "Tormenta de Chakra",
+          "baseDamage": 40
+        },
+        {
+          "id": "ataque-05-4",
+          "nombre": "Técnica Mortal",
+          "baseDamage": 50
+        }
+      ],
+      "defensa": {
+        "nombre": "Guardia de Chakra",
+        "reduccion": 0.5
+      },
+      "especial": {
+        "nombre": "Chidori: Mil Pájaros",
+        "baseDamage": 65,
+        "desbloquearTurn": 2,
+        "enfriamiento": 3,
+        "descripcion": "Técnica especial de Sasuke Uchiha."
+      },
+      "sonidos": {
+        "ataque": "sounds/attack.wav",
+        "defensa": "sounds/defense.wav",
+        "especial": "sounds/special.wav",
+        "derrotado": "sounds/defeated.wav"
+      },
+      "activo": true,
+      "createdAt": "2026-08-19T00:00:00.000Z"
+    },
+    {
+      "id": "tarjeta-006",
+      "nombre": "Itachi Uchiha",
+      "tipo": "Shinobi",
+      "clan": "Uchiha",
+      "rareza": "SR",
+      "imagen": "images/cartas/ITACHI_UCHIHA.png",
+      "descripcion": "ANBU Desertor. Domina el combate con técnicas de Uchiha.",
+      "hp": 250,
+      "ataques": [
+        {
+          "id": "ataque-06-1",
+          "nombre": "Palma Chakra",
+          "baseDamage": 20
+        },
+        {
+          "id": "ataque-06-2",
+          "nombre": "Combo del Shinobi",
+          "baseDamage": 30
+        },
+        {
+          "id": "ataque-06-3",
+          "nombre": "Golpe Demoledor",
+          "baseDamage": 40
+        },
+        {
+          "id": "ataque-06-4",
+          "nombre": "Impacto de Guerra",
+          "baseDamage": 50
+        }
+      ],
+      "defensa": {
+        "nombre": "Guardia de Chakra",
+        "reduccion": 0.5
+      },
+      "especial": {
+        "nombre": "Mangekyō Sharingan: Amaterasu",
+        "baseDamage": 65,
+        "desbloquearTurn": 2,
+        "enfriamiento": 3,
+        "descripcion": "Técnica especial de Itachi Uchiha."
+      },
+      "sonidos": {
+        "ataque": "sounds/attack.wav",
+        "defensa": "sounds/defense.wav",
+        "especial": "sounds/special.wav",
+        "derrotado": "sounds/defeated.wav"
+      },
+      "activo": true,
+      "createdAt": "2026-08-19T00:00:00.000Z"
+    },
+    {
+      "id": "tarjeta-007",
+      "nombre": "Minato Namikaze",
+      "tipo": "Shinobi",
+      "clan": "Konoha",
+      "rareza": "SR",
+      "imagen": "images/cartas/MINATO_NAMIKAZE.png",
+      "descripcion": "Cuarto Hokage. Domina el combate con técnicas de Konoha.",
+      "hp": 250,
+      "ataques": [
+        {
+          "id": "ataque-07-1",
+          "nombre": "Jutsu Elemental",
+          "baseDamage": 20
+        },
+        {
+          "id": "ataque-07-2",
+          "nombre": "Ataque Giratorio",
+          "baseDamage": 30
+        },
+        {
+          "id": "ataque-07-3",
+          "nombre": "Asalto Supremo",
+          "baseDamage": 40
+        },
+        {
+          "id": "ataque-07-4",
+          "nombre": "Ráfaga Final",
+          "baseDamage": 50
+        }
+      ],
+      "defensa": {
+        "nombre": "Guardia de Chakra",
+        "reduccion": 0.5
+      },
+      "especial": {
+        "nombre": "Hiraishin no Jutsu",
+        "baseDamage": 65,
+        "desbloquearTurn": 2,
+        "enfriamiento": 3,
+        "descripcion": "Técnica especial de Minato Namikaze."
+      },
+      "sonidos": {
+        "ataque": "sounds/attack.wav",
+        "defensa": "sounds/defense.wav",
+        "especial": "sounds/special.wav",
+        "derrotado": "sounds/defeated.wav"
+      },
+      "activo": true,
+      "createdAt": "2026-08-19T00:00:00.000Z"
+    },
+    {
+      "id": "tarjeta-008",
+      "nombre": "Kakashi Hatake",
+      "tipo": "Shinobi",
+      "clan": "Konoha",
+      "rareza": "SR",
+      "imagen": "images/cartas/KAKASHI_HATAKE.png",
+      "descripcion": "Copy Ninja. Domina el combate con técnicas de Konoha.",
+      "hp": 250,
+      "ataques": [
+        {
+          "id": "ataque-08-1",
+          "nombre": "Golpe Rápido",
+          "baseDamage": 20
+        },
+        {
+          "id": "ataque-08-2",
+          "nombre": "Técnica de Clan",
+          "baseDamage": 30
+        },
+        {
+          "id": "ataque-08-3",
+          "nombre": "Jutsu Avanzado",
+          "baseDamage": 40
+        },
+        {
+          "id": "ataque-08-4",
+          "nombre": "Arte Ninja",
+          "baseDamage": 50
+        }
+      ],
+      "defensa": {
+        "nombre": "Guardia de Chakra",
+        "reduccion": 0.5
+      },
+      "especial": {
+        "nombre": "Raikiri",
+        "baseDamage": 65,
+        "desbloquearTurn": 2,
+        "enfriamiento": 3,
+        "descripcion": "Técnica especial de Kakashi Hatake."
+      },
+      "sonidos": {
+        "ataque": "sounds/attack.wav",
+        "defensa": "sounds/defense.wav",
+        "especial": "sounds/special.wav",
+        "derrotado": "sounds/defeated.wav"
+      },
+      "activo": true,
+      "createdAt": "2026-08-19T00:00:00.000Z"
+    },
+    {
+      "id": "tarjeta-009",
+      "nombre": "Jiraiya",
+      "tipo": "Shinobi",
+      "clan": "Konoha",
+      "rareza": "SR",
+      "imagen": "images/cartas/JIRAIYA.png",
+      "descripcion": "Sabio de los Sapos. Domina el combate con técnicas de Konoha.",
+      "hp": 250,
+      "ataques": [
+        {
+          "id": "ataque-09-1",
+          "nombre": "Kunai Relámpago",
+          "baseDamage": 20
+        },
+        {
+          "id": "ataque-09-2",
+          "nombre": "Impulso Ninja",
+          "baseDamage": 30
+        },
+        {
+          "id": "ataque-09-3",
+          "nombre": "Tormenta de Chakra",
+          "baseDamage": 40
+        },
+        {
+          "id": "ataque-09-4",
+          "nombre": "Técnica Mortal",
+          "baseDamage": 50
+        }
+      ],
+      "defensa": {
+        "nombre": "Guardia de Chakra",
+        "reduccion": 0.5
+      },
+      "especial": {
+        "nombre": "Modo Sabio: Senjutsu",
+        "baseDamage": 65,
+        "desbloquearTurn": 2,
+        "enfriamiento": 3,
+        "descripcion": "Técnica especial de Jiraiya."
+      },
+      "sonidos": {
+        "ataque": "sounds/attack.wav",
+        "defensa": "sounds/defense.wav",
+        "especial": "sounds/special.wav",
+        "derrotado": "sounds/defeated.wav"
+      },
+      "activo": true,
+      "createdAt": "2026-08-19T00:00:00.000Z"
+    },
+    {
+      "id": "tarjeta-010",
+      "nombre": "Orochimaru",
+      "tipo": "Shinobi",
+      "clan": "Konoha",
+      "rareza": "SR",
+      "imagen": "images/cartas/OROCHIMARU.png",
+      "descripcion": "Sannin Legendario. Domina el combate con técnicas de Konoha.",
+      "hp": 250,
+      "ataques": [
+        {
+          "id": "ataque-10-1",
+          "nombre": "Palma Chakra",
+          "baseDamage": 20
+        },
+        {
+          "id": "ataque-10-2",
+          "nombre": "Combo del Shinobi",
+          "baseDamage": 30
+        },
+        {
+          "id": "ataque-10-3",
+          "nombre": "Golpe Demoledor",
+          "baseDamage": 40
+        },
+        {
+          "id": "ataque-10-4",
+          "nombre": "Impacto de Guerra",
+          "baseDamage": 50
+        }
+      ],
+      "defensa": {
+        "nombre": "Guardia de Chakra",
+        "reduccion": 0.5
+      },
+      "especial": {
+        "nombre": "Regeneración Impura",
+        "baseDamage": 65,
+        "desbloquearTurn": 2,
+        "enfriamiento": 3,
+        "descripcion": "Técnica especial de Orochimaru."
+      },
+      "sonidos": {
+        "ataque": "sounds/attack.wav",
+        "defensa": "sounds/defense.wav",
+        "especial": "sounds/special.wav",
+        "derrotado": "sounds/defeated.wav"
+      },
+      "activo": true,
+      "createdAt": "2026-08-19T00:00:00.000Z"
+    },
+    {
+      "id": "tarjeta-011",
+      "nombre": "Gaara",
+      "tipo": "Shinobi",
+      "clan": "Arena",
+      "rareza": "SR",
+      "imagen": "images/cartas/GAARA.png",
+      "descripcion": "Kazekage de la Arena. Domina el combate con técnicas de Arena.",
+      "hp": 250,
+      "ataques": [
+        {
+          "id": "ataque-11-1",
+          "nombre": "Jutsu Elemental",
+          "baseDamage": 20
+        },
+        {
+          "id": "ataque-11-2",
+          "nombre": "Ataque Giratorio",
+          "baseDamage": 30
+        },
+        {
+          "id": "ataque-11-3",
+          "nombre": "Asalto Supremo",
+          "baseDamage": 40
+        },
+        {
+          "id": "ataque-11-4",
+          "nombre": "Ráfaga Final",
+          "baseDamage": 50
+        }
+      ],
+      "defensa": {
+        "nombre": "Guardia de Chakra",
+        "reduccion": 0.5
+      },
+      "especial": {
+        "nombre": "Entierro de Arena: Gran Ataúd",
+        "baseDamage": 65,
+        "desbloquearTurn": 2,
+        "enfriamiento": 3,
+        "descripcion": "Técnica especial de Gaara."
+      },
+      "sonidos": {
+        "ataque": "sounds/attack.wav",
+        "defensa": "sounds/defense.wav",
+        "especial": "sounds/special.wav",
+        "derrotado": "sounds/defeated.wav"
+      },
+      "activo": true,
+      "createdAt": "2026-08-19T00:00:00.000Z"
+    },
+    {
+      "id": "tarjeta-012",
+      "nombre": "Rock Lee",
+      "tipo": "Shinobi",
+      "clan": "Konoha",
+      "rareza": "SR",
+      "imagen": "images/cartas/ROCK_LEE.png",
+      "descripcion": "Especialista Taijutsu. Domina el combate con técnicas de Konoha.",
+      "hp": 250,
+      "ataques": [
+        {
+          "id": "ataque-12-1",
+          "nombre": "Golpe Rápido",
+          "baseDamage": 20
+        },
+        {
+          "id": "ataque-12-2",
+          "nombre": "Técnica de Clan",
+          "baseDamage": 30
+        },
+        {
+          "id": "ataque-12-3",
+          "nombre": "Jutsu Avanzado",
+          "baseDamage": 40
+        },
+        {
+          "id": "ataque-12-4",
+          "nombre": "Arte Ninja",
+          "baseDamage": 50
+        }
+      ],
+      "defensa": {
+        "nombre": "Guardia de Chakra",
+        "reduccion": 0.5
+      },
+      "especial": {
+        "nombre": "Puertas Internas: Primera Puerta",
+        "baseDamage": 65,
+        "desbloquearTurn": 2,
+        "enfriamiento": 3,
+        "descripcion": "Técnica especial de Rock Lee."
+      },
+      "sonidos": {
+        "ataque": "sounds/attack.wav",
+        "defensa": "sounds/defense.wav",
+        "especial": "sounds/special.wav",
+        "derrotado": "sounds/defeated.wav"
+      },
+      "activo": true,
+      "createdAt": "2026-08-19T00:00:00.000Z"
+    },
+    {
+      "id": "tarjeta-013",
+      "nombre": "Neji Hyuga",
+      "tipo": "Shinobi",
+      "clan": "Konoha",
+      "rareza": "SR",
+      "imagen": "images/cartas/NEJI_HYUGA.png",
+      "descripcion": "Genio Hyuga. Domina el combate con técnicas de Konoha.",
+      "hp": 250,
+      "ataques": [
+        {
+          "id": "ataque-13-1",
+          "nombre": "Kunai Relámpago",
+          "baseDamage": 20
+        },
+        {
+          "id": "ataque-13-2",
+          "nombre": "Impulso Ninja",
+          "baseDamage": 30
+        },
+        {
+          "id": "ataque-13-3",
+          "nombre": "Tormenta de Chakra",
+          "baseDamage": 40
+        },
+        {
+          "id": "ataque-13-4",
+          "nombre": "Técnica Mortal",
+          "baseDamage": 50
+        }
+      ],
+      "defensa": {
+        "nombre": "Guardia de Chakra",
+        "reduccion": 0.5
+      },
+      "especial": {
+        "nombre": "Gentle Fist: Palma Aérea",
+        "baseDamage": 65,
+        "desbloquearTurn": 2,
+        "enfriamiento": 3,
+        "descripcion": "Técnica especial de Neji Hyuga."
+      },
+      "sonidos": {
+        "ataque": "sounds/attack.wav",
+        "defensa": "sounds/defense.wav",
+        "especial": "sounds/special.wav",
+        "derrotado": "sounds/defeated.wav"
+      },
+      "activo": true,
+      "createdAt": "2026-08-19T00:00:00.000Z"
+    },
+    {
+      "id": "tarjeta-014",
+      "nombre": "Hinata Hyuga",
+      "tipo": "Shinobi",
+      "clan": "Konoha",
+      "rareza": "SR",
+      "imagen": "images/cartas/HINATA_HYUGA.png",
+      "descripcion": "Heredera Hyuga. Domina el combate con técnicas de Konoha.",
+      "hp": 250,
+      "ataques": [
+        {
+          "id": "ataque-14-1",
+          "nombre": "Palma Chakra",
+          "baseDamage": 20
+        },
+        {
+          "id": "ataque-14-2",
+          "nombre": "Combo del Shinobi",
+          "baseDamage": 30
+        },
+        {
+          "id": "ataque-14-3",
+          "nombre": "Golpe Demoledor",
+          "baseDamage": 40
+        },
+        {
+          "id": "ataque-14-4",
+          "nombre": "Impacto de Guerra",
+          "baseDamage": 50
+        }
+      ],
+      "defensa": {
+        "nombre": "Guardia de Chakra",
+        "reduccion": 0.5
+      },
+      "especial": {
+        "nombre": "Gentle Fist: Protección de Ocho Trigramas",
+        "baseDamage": 65,
+        "desbloquearTurn": 2,
+        "enfriamiento": 3,
+        "descripcion": "Técnica especial de Hinata Hyuga."
+      },
+      "sonidos": {
+        "ataque": "sounds/attack.wav",
+        "defensa": "sounds/defense.wav",
+        "especial": "sounds/special.wav",
+        "derrotado": "sounds/defeated.wav"
+      },
+      "activo": true,
+      "createdAt": "2026-08-19T00:00:00.000Z"
+    },
+    {
+      "id": "tarjeta-015",
+      "nombre": "Shikamaru Nara",
+      "tipo": "Shinobi",
+      "clan": "Konoha",
+      "rareza": "SR",
+      "imagen": "images/cartas/SHIKAMARU_NARA.png",
+      "descripcion": "Estratega de las Sombras. Domina el combate con técnicas de Konoha.",
+      "hp": 250,
+      "ataques": [
+        {
+          "id": "ataque-15-1",
+          "nombre": "Jutsu Elemental",
+          "baseDamage": 20
+        },
+        {
+          "id": "ataque-15-2",
+          "nombre": "Ataque Giratorio",
+          "baseDamage": 30
+        },
+        {
+          "id": "ataque-15-3",
+          "nombre": "Asalto Supremo",
+          "baseDamage": 40
+        },
+        {
+          "id": "ataque-15-4",
+          "nombre": "Ráfaga Final",
+          "baseDamage": 50
+        }
+      ],
+      "defensa": {
+        "nombre": "Guardia de Chakra",
+        "reduccion": 0.5
+      },
+      "especial": {
+        "nombre": "Técnica de Sombra: Inmovilización",
+        "baseDamage": 65,
+        "desbloquearTurn": 2,
+        "enfriamiento": 3,
+        "descripcion": "Técnica especial de Shikamaru Nara."
+      },
+      "sonidos": {
+        "ataque": "sounds/attack.wav",
+        "defensa": "sounds/defense.wav",
+        "especial": "sounds/special.wav",
+        "derrotado": "sounds/defeated.wav"
+      },
+      "activo": true,
+      "createdAt": "2026-08-19T00:00:00.000Z"
+    },
+    {
+      "id": "tarjeta-016",
+      "nombre": "Naruto Uzumaki",
+      "tipo": "Shinobi",
+      "clan": "Konoha",
+      "rareza": "SR",
+      "imagen": "images/cartas/NARUTO_UZUMAKI.png",
+      "descripcion": "Séptimo Hokage. Domina el combate con técnicas de Konoha.",
+      "hp": 250,
+      "ataques": [
+        {
+          "id": "ataque-16-1",
+          "nombre": "Golpe Rápido",
+          "baseDamage": 20
+        },
+        {
+          "id": "ataque-16-2",
+          "nombre": "Técnica de Clan",
+          "baseDamage": 30
+        },
+        {
+          "id": "ataque-16-3",
+          "nombre": "Jutsu Avanzado",
+          "baseDamage": 40
+        },
+        {
+          "id": "ataque-16-4",
+          "nombre": "Arte Ninja",
+          "baseDamage": 50
+        }
+      ],
+      "defensa": {
+        "nombre": "Guardia de Chakra",
+        "reduccion": 0.5
+      },
+      "especial": {
+        "nombre": "Modo Kurama: Rasengan",
+        "baseDamage": 65,
+        "desbloquearTurn": 2,
+        "enfriamiento": 3,
+        "descripcion": "Técnica especial de Naruto Uzumaki."
+      },
+      "sonidos": {
+        "ataque": "sounds/attack.wav",
+        "defensa": "sounds/defense.wav",
+        "especial": "sounds/special.wav",
+        "derrotado": "sounds/defeated.wav"
+      },
+      "activo": true,
+      "createdAt": "2026-08-19T00:00:00.000Z"
+    },
+    {
+      "id": "tarjeta-017",
+      "nombre": "Sakura Haruno",
+      "tipo": "Shinobi",
+      "clan": "Konoha",
+      "rareza": "SR",
+      "imagen": "images/cartas/SAKURA_HARUNO.png",
+      "descripcion": "Ninja Médico. Domina el combate con técnicas de Konoha.",
+      "hp": 250,
+      "ataques": [
+        {
+          "id": "ataque-17-1",
+          "nombre": "Kunai Relámpago",
+          "baseDamage": 20
+        },
+        {
+          "id": "ataque-17-2",
+          "nombre": "Impulso Ninja",
+          "baseDamage": 30
+        },
+        {
+          "id": "ataque-17-3",
+          "nombre": "Tormenta de Chakra",
+          "baseDamage": 40
+        },
+        {
+          "id": "ataque-17-4",
+          "nombre": "Técnica Mortal",
+          "baseDamage": 50
+        }
+      ],
+      "defensa": {
+        "nombre": "Guardia de Chakra",
+        "reduccion": 0.5
+      },
+      "especial": {
+        "nombre": "Fuerza de Cien: Golpe Creador",
+        "baseDamage": 65,
+        "desbloquearTurn": 2,
+        "enfriamiento": 3,
+        "descripcion": "Técnica especial de Sakura Haruno."
+      },
+      "sonidos": {
+        "ataque": "sounds/attack.wav",
+        "defensa": "sounds/defense.wav",
+        "especial": "sounds/special.wav",
+        "derrotado": "sounds/defeated.wav"
+      },
+      "activo": true,
+      "createdAt": "2026-08-19T00:00:00.000Z"
+    },
+    {
+      "id": "tarjeta-018",
+      "nombre": "Choji Akimichi",
+      "tipo": "Shinobi",
+      "clan": "Akimichi",
+      "rareza": "SR",
+      "imagen": "images/cartas/CHOJI_AKIMICHI.png",
+      "descripcion": "Guerrero Akimichi. Domina el combate con técnicas de Akimichi.",
+      "hp": 250,
+      "ataques": [
+        {
+          "id": "ataque-18-1",
+          "nombre": "Palma Chakra",
+          "baseDamage": 20
+        },
+        {
+          "id": "ataque-18-2",
+          "nombre": "Combo del Shinobi",
+          "baseDamage": 30
+        },
+        {
+          "id": "ataque-18-3",
+          "nombre": "Golpe Demoledor",
+          "baseDamage": 40
+        },
+        {
+          "id": "ataque-18-4",
+          "nombre": "Impacto de Guerra",
+          "baseDamage": 50
+        }
+      ],
+      "defensa": {
+        "nombre": "Guardia de Chakra",
+        "reduccion": 0.5
+      },
+      "especial": {
+        "nombre": "Técnica de Expansión: Multiplicación",
+        "baseDamage": 65,
+        "desbloquearTurn": 2,
+        "enfriamiento": 3,
+        "descripcion": "Técnica especial de Choji Akimichi."
+      },
+      "sonidos": {
+        "ataque": "sounds/attack.wav",
+        "defensa": "sounds/defense.wav",
+        "especial": "sounds/special.wav",
+        "derrotado": "sounds/defeated.wav"
+      },
+      "activo": true,
+      "createdAt": "2026-08-19T00:00:00.000Z"
+    },
+    {
+      "id": "tarjeta-019",
+      "nombre": "Kiba Inuzuka",
+      "tipo": "Shinobi",
+      "clan": "Inuzuka",
+      "rareza": "SR",
+      "imagen": "images/cartas/KIBA_INUZUKA.png",
+      "descripcion": "Cazador Inuzuka. Domina el combate con técnicas de Inuzuka.",
+      "hp": 250,
+      "ataques": [
+        {
+          "id": "ataque-19-1",
+          "nombre": "Jutsu Elemental",
+          "baseDamage": 20
+        },
+        {
+          "id": "ataque-19-2",
+          "nombre": "Ataque Giratorio",
+          "baseDamage": 30
+        },
+        {
+          "id": "ataque-19-3",
+          "nombre": "Asalto Supremo",
+          "baseDamage": 40
+        },
+        {
+          "id": "ataque-19-4",
+          "nombre": "Ráfaga Final",
+          "baseDamage": 50
+        }
+      ],
+      "defensa": {
+        "nombre": "Guardia de Chakra",
+        "reduccion": 0.5
+      },
+      "especial": {
+        "nombre": "Técnica de Colmillo: Colmillo Doble",
+        "baseDamage": 65,
+        "desbloquearTurn": 2,
+        "enfriamiento": 3,
+        "descripcion": "Técnica especial de Kiba Inuzuka."
+      },
+      "sonidos": {
+        "ataque": "sounds/attack.wav",
+        "defensa": "sounds/defense.wav",
+        "especial": "sounds/special.wav",
+        "derrotado": "sounds/defeated.wav"
+      },
+      "activo": true,
+      "createdAt": "2026-08-19T00:00:00.000Z"
+    },
+    {
+      "id": "tarjeta-020",
+      "nombre": "Temari",
+      "tipo": "Shinobi",
+      "clan": "Viento",
+      "rareza": "SR",
+      "imagen": "images/cartas/TEMARI.png",
+      "descripcion": "Maestra del Viento. Domina el combate con técnicas de Viento.",
+      "hp": 250,
+      "ataques": [
+        {
+          "id": "ataque-20-1",
+          "nombre": "Golpe Rápido",
+          "baseDamage": 20
+        },
+        {
+          "id": "ataque-20-2",
+          "nombre": "Técnica de Clan",
+          "baseDamage": 30
+        },
+        {
+          "id": "ataque-20-3",
+          "nombre": "Jutsu Avanzado",
+          "baseDamage": 40
+        },
+        {
+          "id": "ataque-20-4",
+          "nombre": "Arte Ninja",
+          "baseDamage": 50
+        }
+      ],
+      "defensa": {
+        "nombre": "Guardia de Chakra",
+        "reduccion": 0.5
+      },
+      "especial": {
+        "nombre": "Estilo Viento: Gran Corte",
+        "baseDamage": 65,
+        "desbloquearTurn": 2,
+        "enfriamiento": 3,
+        "descripcion": "Técnica especial de Temari."
+      },
+      "sonidos": {
+        "ataque": "sounds/attack.wav",
+        "defensa": "sounds/defense.wav",
+        "especial": "sounds/special.wav",
+        "derrotado": "sounds/defeated.wav"
+      },
+      "activo": true,
+      "createdAt": "2026-08-19T00:00:00.000Z"
+    }
+  ],
+  "batallas": [
+    {
+      "id": "batalla-a542dd36",
+      "playerId": "jugador-170d0d4e",
+      "apodo": "alonso",
+      "resultado": "victoria",
+      "puntosOtorgados": 50,
+      "playerDeck": [
+        "tarjeta-001",
+        "tarjeta-002",
+        "tarjeta-003",
+        "tarjeta-004",
+        "tarjeta-005"
+      ],
+      "machineDeck": [
+        "tarjeta-016",
+        "tarjeta-012",
+        "tarjeta-013",
+        "tarjeta-019",
+        "tarjeta-011"
+      ],
+      "startedAt": "2026-08-20T02:04:52.186Z",
+      "finalizadoEn": "2026-08-20T02:07:07.941Z"
+    },
+    {
+      "id": "batalla-18304ddc",
+      "playerId": "jugador-342acf6c",
+      "apodo": "Diego",
+      "resultado": "victoria",
+      "puntosOtorgados": 50,
+      "playerDeck": [
+        "tarjeta-001",
+        "tarjeta-002",
+        "tarjeta-003",
+        "tarjeta-006",
+        "tarjeta-007"
+      ],
+      "machineDeck": [
+        "tarjeta-012",
+        "tarjeta-004",
+        "tarjeta-010",
+        "tarjeta-009",
+        "tarjeta-018"
+      ],
+      "startedAt": "2026-08-20T03:58:10.985Z",
+      "finalizadoEn": "2026-08-20T04:00:41.320Z"
+    },
+    {
+      "id": "batalla-c547e304",
+      "playerId": "jugador-342acf6c",
+      "apodo": "Diego",
+      "resultado": "victoria",
+      "puntosOtorgados": 50,
+      "playerDeck": [
+        "tarjeta-012",
+        "tarjeta-009",
+        "tarjeta-016",
+        "tarjeta-017",
+        "tarjeta-019"
+      ],
+      "machineDeck": [
+        "tarjeta-004",
+        "tarjeta-015",
+        "tarjeta-018",
+        "tarjeta-010",
+        "tarjeta-007"
+      ],
+      "startedAt": "2026-08-20T17:51:41.691Z",
+      "finalizadoEn": "2026-08-20T17:55:01.671Z"
+    },
+    {
+      "id": "batalla-13feb5f4",
+      "playerId": "jugador-866d44fe",
+      "apodo": "diego",
+      "resultado": "victoria",
+      "puntosOtorgados": 50,
+      "playerDeck": [
+        "tarjeta-013",
+        "tarjeta-015",
+        "tarjeta-016",
+        "tarjeta-018",
+        "tarjeta-019"
+      ],
+      "machineDeck": [
+        "tarjeta-009",
+        "tarjeta-014",
+        "tarjeta-001",
+        "tarjeta-006",
+        "tarjeta-020"
+      ],
+      "startedAt": "2026-08-20T22:48:42.947Z",
+      "finalizadoEn": "2026-08-20T22:51:42.590Z"
+    }
+  ]
+}
